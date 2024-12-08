@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+.gird-container {
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+   
+}
+.gird-container>* {
+    background-color: black;
+}
+.item-1 {
+    grid-row: 1/4;
+}
+.item-2 {
+    grid-column: 2/4;
+}
+.item-6 {
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+.item-4 {
+    grid-column: 1/4;
+}
+.item-5,
+.item-7,
+.item-8,
+.ite

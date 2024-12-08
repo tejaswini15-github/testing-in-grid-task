@@ -1,0 +1,21 @@
+.container {
+    display: grid;                         /* Defines the container as a grid */
+    grid-template-columns: 100px 100px 100px; /* Creates 3 columns of 100px width */
+    grid-template-rows: 100px 100px 100px;    /* Creates 3 rows of 100px height */
+    grid-auto-flow: column dense;           /* Fills gaps column-wise */
+  }
+  
+  .item {
+    width: 100px;                          /* Width of each grid item */
+    height: 100px;                         /* Height of each grid item */
+    background-color: lightyellow;         /* Background color for each item */
+    display: flex;
+    justify-content: center;               /* Centers text horizontally */
+    align-items: center;                   /* Centers text vertically */
+    text-align: center;                    /* Centers text inside each item */
+  }
+  
+  .item:nth-child(3) {
+    grid-column: span 2;                   /* The 3rd item spans 2 columns */
+  }
+  
